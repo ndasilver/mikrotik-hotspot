@@ -33,7 +33,7 @@ $errors = array();
 
 try {
     //Adjust RouterOS IP, username and password accordingly.
-    $client = new RouterOS\Client('192.168.1.1', 'admin', 'Hakiza_p!1');
+    $client = new RouterOS\Client('router_ip', 'router_username', 'router_password');
 } catch(Exception $e) {
     $errors[] = $e->getMessage();
 }
